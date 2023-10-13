@@ -11,23 +11,21 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/c96d6c9fb9.js" crossorigin="anonymous"></script>
+
+    <script src="menu.js" defer></script>
     <title>Portifólio</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="interface">
-            <div class="logo">
-                <a href="#">
-                    <img src="./images/logo.png" alt="Logo do portifólio">
-                </a>
-            </div>
-
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#header">Início</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <!-- <li><a href="#portfolio">Projetos</a></li> -->
                 </ul>
             </nav>
 
@@ -35,6 +33,30 @@
                 <a href="">
                     <button>Contato</button>
                 </a>
+            </div>
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <!-- <li><a href="#portfolio">Projetos</a></li> -->
+                        <li><a href="#formulario">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="overlay-menu">
+
             </div>
         </div>
     </header>
@@ -44,8 +66,8 @@
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
-                        <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL</h1>
-                        <p>Criatividade de inovação sempre.</p>
+                        <h1 id="saudacao"></h1>
+                        <p></p>
 
                         <div class="btn-contato">
                             <a href="">
@@ -55,61 +77,68 @@
                     </div>
 
                     <div class="img-topo-site">
-                        <img src="./images/pessoa.png" alt="" srcset="">
+                        <img src="./images/pessoa2.png" alt="" srcset="">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="especialidades">
+        <section class="especialidades" id="especialidades">
             <div class="interface">
                 <h2 class="titulo">MINHAS <span>ESPECIALIDADES</span></h2>
                 <div class="flex">
                     <div class="especialidades-box">
-                        <i class="bi bi-code-square"></i>
-                        <h3>Website</h3>
-                        <p>teste especialidade website.</p>
+                        <i class="fa-brands fa-php"></i>
+                        <h3>PHP</h3>
+                        <p>3 anos de experiência</p>
                     </div>
 
                     <div class="especialidades-box">
-                        <i class="bi bi-cart"></i>
-                        <h3>Cart</h3>
-                        <p>teste especialidade cart.</p>
+                        <i class="fa-brands fa-aws"></i>
+                        <h3>AWS</h3>
+                        <p>2 anos de experiência</p>
                     </div>
 
                     <div class="especialidades-box">
-                        <i class="bi bi-code-square"></i>
-                        <h3>Website</h3>
-                        <p>teste especialidade.</p>
+                        <i class="fa-brands fa-square-js"></i>
+                        <h3>JavaScript</h3>
+                        <p>3 anos de experiência</p>
+                    </div>
+
+                    <div class="especialidades-box">
+                        <i class="fa-solid fa-database"></i>
+                        <h3>MYSQL</h3>
+                        <p>3 anos de experiência</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre">
-                        <img src="./images/foto.png" alt="" srcset="">
+                        <img src="./images/foto2.png" alt="" srcset="">
                     </div>
 
                     <div class="txt-sobre">
                         <h2>MUITO PRAZER, <span>SOU ESTÊVÃO TIENGO LEITE.</span></h2>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'.</p>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here',</p>
+                        <p>Sou um apaixonado por tecnologia. Desde sempre fui ligado a essa área, começando com manutenção e conserto de notebooks e PC's.</p>
+                        <p>Em 2017, comecei minha faculdade em Bacharelado de Sistemas de Informação no CEFET-RJ/NF e descobri minha verdadeira paixão, a programação. Durante esse período de faculdade, fui aprendendo sobre várias linguagens de programação e em 2021, em plena pandemia de COVID, recebi a proposta de uma empresa focada em ecommerce. Foram 2 anos trabalhando com MYSQL, Javascript/Jquery, AWS e PHP e resolvendo vários problemas diariamente.</p>
+                        <p>Em 2023, recebi a proposta de outra empresa para continuar trabalhando com PHP. Sigo atualmente nesse empresa, buscando sempre uma nova oportunidade de crescimento.</p>
 
                         <div class="btn-social">
-                            <a href="#">
+                            <a href="https://www.instagram.com/estevaotl/" target="_blank">
                                 <button>
                                     <i class="bi bi-instagram"></i>
                                 </button>
                             </a>
-                            <a href="#">
+                            <a href="https://github.com/estevaotl" target="_blank">
                                 <button>
-                                    <i class="bi bi-youtube"></i>
+                                    <i class="bi bi-github"></i>
                                 </button>
                             </a>
-                            <a href="#">
+                            <a href="https://www.linkedin.com/in/estevao-leite/" target="_blank">
                                 <button>
                                     <i class="bi bi-linkedin"></i>
                                 </button>
@@ -119,6 +148,83 @@
                 </div>
             </div>
         </section>
+
+        <!-- <section class="portfolio" id="portfolio">
+            <div class="interface">
+                <h2 class="titulo">MEU <span>PORTIFÓLIO.</span></h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(images/imagem.jpg);">
+                        <div class="overlay">
+                            Projeto 1
+                        </div>
+                    </div>
+
+                    <div class="img-port" style="background-image: url(images/imagem.jpg);">
+                        <div class="overlay">
+                            Projeto 1
+                        </div>
+                    </div>
+
+                    <div class="img-port" style="background-image: url(images/imagem.jpg);">
+                        <div class="overlay">
+                            Projeto 1
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="formulario" id="formulario">
+            <div class="interface">
+                <h2 class="titulo">FALA <span>COMIGO.</span></h2>
+                <span id="saidaEnvio" class="escondido"></span>
+                <form action="./php/envioEmail.php" id="formulario-contato">
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+                    <input type="text" name="email" id="email" placeholder="Seu email" required>
+                    <input type="text" name="celular" id="celular" placeholder="Seu Whatsapp">
+                    <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem:" required></textarea>
+                    <div class="btn-enviar">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
+
+    <!-- <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="./images/logo.png" alt="">
+                    </div>
+
+                    <div class="btn-social">
+                        <a href="https://www.instagram.com/estevaotl/" target="_blank">
+                            <button>
+                                <i class="bi bi-instagram"></i>
+                            </button>
+                        </a>
+                        <a href="https://github.com/estevaotl" target="_blank">
+                            <button>
+                                <i class="bi bi-github"></i>
+                            </button>
+                        </a>
+                        <a href="https://www.linkedin.com/in/estevao-leite/" target="_blank">
+                            <button>
+                                <i class="bi bi-linkedin"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line-footer borda">
+                <p>
+                    <i class="bi bi-envelope-fill"></i><a href="mailto:contato@estevao.com.br">estevaotlnf@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </footer> -->
 </body>
 </html>
