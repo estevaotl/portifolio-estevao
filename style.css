@@ -298,26 +298,66 @@ section.portfolio .flex {
     margin-top: 60px;
 }
 
+.portifolio-interface-flex {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+}
+
+.img-port {
+    width: calc(33.33% - 20px); /* Define a largura de cada item, menos a margem */
+    height: 460px;
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden; /* Garante que a overlay não saia do card */
+    margin-bottom: 20px; /* Espaçamento entre as linhas */
+}
+
+.project-title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 10; /* Fixa o título acima da overlay */
+    transition: opacity 0.5s; /* Transição suave para a opacidade */
+    inset-area: center;
+}
+
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 40px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
     color: #fff;
-    background-color: #000000b8;
-    opacity: 0;
-    transition: .5s;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.5s;
 }
 
-.overlay:hover {
-    opacity: 1;
+.img-port:hover .overlay {
+    opacity: 1; /* Mostra a descrição ao passar o mouse */
+}
+
+.img-port:hover .project-title {
+    opacity: 0; /* Esconde o nome do projeto ao passar o mouse */
+}
+
+.overlay p {
+    margin: 25px 25px 0 25px; /* Espaçamento entre os parágrafos */
+    text-align: justify; /* Opcional: centraliza o texto */
 }
 
 #saidaEnvio{
@@ -335,7 +375,7 @@ section.portfolio .flex {
 
 /* ESTILO DO FORMULARIO DE CONTATO */
 
-section.formulario {
+section.formulario, section.redes_sociais {
     padding: 80px 4%;
 }
 
@@ -489,7 +529,7 @@ footer .line-footer p a {
     .img-port {
         width: 100%;
         max-width: 360px;
-        margin: 0 auto;
+        margin: 10px auto;
     }
 
     section.portfolio .flex {
@@ -507,4 +547,67 @@ footer .line-footer p a {
     .btn-abrir-menu {
         display: none;
     }
+}
+
+#redes_sociais .btn-social {
+    margin-top: 40px;
+    justify-self: center;
+}
+
+.cor-verde-portifolio {
+    background-color: #2c5c32;
+}
+
+/* Exibir a descrição sempre em mobile */
+@media screen and (max-width: 1020px) {
+    .img-port:hover .overlay {
+        opacity: 1; /* Mostra a descrição ao passar o mouse */
+    }
+
+    .overlay {
+        display: flex;
+        opacity: 1; /* Sempre visível em mobile */
+    }
+
+    .project-title {
+        opacity: 0; /* Oculta o título em mobile */
+    }
+}
+
+/* Efeito de hover para desktops */
+@media screen and (min-width: 1021px) {
+    .img-port:hover .overlay {
+        opacity: 1; /* Mostra a descrição ao passar o mouse */
+    }
+
+    .img-port:hover .project-title {
+        opacity: 0; /* Esconde o nome do projeto ao passar o mouse */
+    }
+}
+
+/* Estilo do botão flutuante para retornar ao topo */
+.btn-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background-color: #00FF08;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    border: 0;
+    font-size: 22px;
+}
+
+.btn-topo img {
+    width: 70%; /* Ajusta a imagem para preencher o botão */
+    height: auto; /* Mantém a proporção da imagem */
+    -webkit-box-align: end;
+}
+
+.btn-topo:focus {
+    outline: none;
 }

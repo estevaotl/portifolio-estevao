@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +18,7 @@
     <script src="menu.js" defer></script>
     <title>Portifólio</title>
 </head>
+
 <body>
     <header id="header">
         <div class="interface">
@@ -25,12 +27,12 @@
                     <li><a href="#header">Início</a></li>
                     <li><a href="#especialidades">Especialidades</a></li>
                     <li><a href="#sobre">Sobre</a></li>
-                    <!-- <li><a href="#portfolio">Projetos</a></li> -->
+                    <li><a href="#portfolio">Projetos</a></li>
                 </ul>
             </nav>
 
             <div class="btn-contato">
-                <a href="">
+                <a href="#formulario">
                     <button>Contato</button>
                 </a>
             </div>
@@ -69,11 +71,11 @@
                         <h1 id="saudacao"></h1>
                         <p></p>
 
-                        <div class="btn-contato">
-                            <a href="">
+                        <!-- <div class="btn-contato">
+                            <a href="https://wa.me/5522997249606?text=Olá%20gostaria%20de%20mais%20informações%20sobre%20o%20seu%20serviço." target="_blank">
                                 <button>Entre em contato</button>
                             </a>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="img-topo-site">
@@ -90,25 +92,26 @@
                     <div class="especialidades-box">
                         <i class="fa-brands fa-php"></i>
                         <h3>PHP</h3>
-                        <p>3 anos de experiência</p>
                     </div>
 
                     <div class="especialidades-box">
                         <i class="fa-brands fa-aws"></i>
                         <h3>AWS</h3>
-                        <p>2 anos de experiência</p>
                     </div>
 
                     <div class="especialidades-box">
                         <i class="fa-brands fa-square-js"></i>
                         <h3>JavaScript</h3>
-                        <p>3 anos de experiência</p>
                     </div>
 
                     <div class="especialidades-box">
                         <i class="fa-solid fa-database"></i>
                         <h3>MYSQL</h3>
-                        <p>3 anos de experiência</p>
+                    </div>
+
+                    <div class="especialidades-box">
+                        <i class="fa-brands fa-react"></i>
+                        <h3>React</h3>
                     </div>
                 </div>
             </div>
@@ -123,27 +126,15 @@
 
                     <div class="txt-sobre">
                         <h2>MUITO PRAZER, <span>SOU ESTÊVÃO TIENGO LEITE.</span></h2>
-                        <p>Sou um apaixonado por tecnologia. Desde sempre fui ligado a essa área, começando com manutenção e conserto de notebooks e PC's.</p>
-                        <p>Em 2017, comecei minha faculdade em Bacharelado de Sistemas de Informação no CEFET-RJ/NF e descobri minha verdadeira paixão, a programação. Durante esse período de faculdade, fui aprendendo sobre várias linguagens de programação e em 2021, em plena pandemia de COVID, recebi a proposta de uma empresa focada em ecommerce. Foram 2 anos trabalhando com MYSQL, Javascript/Jquery, AWS e PHP e resolvendo vários problemas diariamente.</p>
-                        <p>Em 2023, recebi a proposta de outra empresa para continuar trabalhando com PHP. Sigo atualmente nesse empresa, buscando sempre uma nova oportunidade de crescimento.</p>
-
-                        <div class="btn-social">
-                            <a href="https://www.instagram.com/estevaotl/" target="_blank">
-                                <button>
-                                    <i class="bi bi-instagram"></i>
-                                </button>
-                            </a>
-                            <a href="https://github.com/estevaotl" target="_blank">
-                                <button>
-                                    <i class="bi bi-github"></i>
-                                </button>
-                            </a>
-                            <a href="https://www.linkedin.com/in/estevao-leite/" target="_blank">
-                                <button>
-                                    <i class="bi bi-linkedin"></i>
-                                </button>
-                            </a>
-                        </div>
+                        <p>
+                            Sou apaixonado por tecnologia e sempre estive conectado a essa área, começando com a manutenção e o conserto de notebooks e PCs.
+                        </p>
+                        <p>
+                            Em 2017, iniciei a graduação em Bacharelado de Sistemas de Informação no CEFET-RJ/NF, concluindo-a em 2024, onde descobri minha verdadeira vocação: a programação.
+                        </p>
+                        <p>
+                            Em 2021, mergulhei no mundo da programação como desenvolvedor, focando no desenvolvimento de software. Trabalhei principalmente com sistemas de e-commerce e marketing digital, adquirindo conhecimentos sólidos em criação e otimização de plataformas digitais. Já liderei equipes, coordenando projetos para melhorias em sistemas na nuvem. Minha trajetória profissional inclui tanto o desenvolvimento de sistemas robustos quanto a liderança de equipes técnicas, sempre com uma forte capacidade analítica, boa comunicação e habilidades para resolver problemas complexos.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -174,11 +165,64 @@
             </div>
         </section> -->
 
+        <section class="portfolio" id="portfolio">
+            <div class="interface">
+                <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
+                <div class="portifolio-interface-flex">
+                    <div class="img-port cor-verde-portifolio" onclick="window.open('https://github.com/estevaotl/match-servicos', '_blank')">
+                        <h3 class="project-title">Match Serviços</h3>
+                        <div class="overlay">
+                            <p>Desenvolvi uma plataforma web que permite aos usuários se registrarem e buscarem prestadores de serviços com base na proximidade geográfica.     
+                                <br>O sistema calcula a distância entre o usuário e os profissionais disponíveis e oferece um portfólio visual com imagens dos trabalhos realizados. 
+                                <br>Após selecionar um prestador, o usuário pode contatá-lo via WhatsApp para iniciar a contratação.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="img-port cor-verde-portifolio" onclick="window.open('https://github.com/estevaotl/aplicacao-docker', '_blank')">
+                        <h3 class="project-title">Projeto Docker</h3>
+                        <div class="overlay">
+                            <p>Este projeto, desenvolvido como um teste técnico para a EzOps, utiliza NodeJS para enviar mensagens a um banco de dados não relacional.          
+                                <br>Inclui automação no GitHub para atualizar o container automaticamente, garantindo que as modificações fiquem disponíveis online sem necessidade de pull no servidor. A aplicação foi criada com Docker e hospedada na AWS.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="img-port cor-verde-portifolio" onclick="window.open('https://github.com/estevaotl/criptografia-rsa', '_blank')">
+                        <h3 class="project-title">Criptografia RSA</h3>
+                        <div class="overlay">
+                            <p>Aplicação para criptografar e descriptografar textos utilizando criptografia e métodos RSA. 
+                                <br>Recebe arquivos criptografados e descriptografados e faz o processo inverso.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="img-port cor-verde-portifolio" onclick="window.open('https://github.com/estevaotl/python-projeto-conta-bancaria', '_blank')">
+                        <h3 class="project-title">Conta Bancária</h3>
+                        <div class="overlay">
+                            <p>Durante o curso de Python da plataforma DIO, foi pedido para fazermos um menu para movimentação de conta bancaria</p>
+                        </div>
+                    </div>
+                    <div class="img-port cor-verde-portifolio" onclick="window.open('https://github.com/estevaotl/api_nova', '_blank')">
+                        <h3 class="project-title">Captura de dados do cnpj dos sites</h3>
+                        <div class="overlay">
+                            <p>Projeto realizado para captura de informações juridicas dos sites, como CNPJ, endereço etc.
+                                <br>Após a captura desses dados, validamos eles na receita federal, para verificar se as informações batem com o que foi cadastrado, a fim de evitar que os consumidores caiam em golpes.
+                                <br>Por fim, é gerado um html de saída com um score de acordo com a quantidade de dados válidos.</p>
+                        </div>
+                    </div>
+                    <div class="img-port cor-verde-portifolio" onclick="window.open('https://github.com/estevaotl/teste-quadro-societario', '_blank')">
+                        <h3 class="project-title">Quadro de Societários</h3>
+                        <div class="overlay">
+                            <p>Nesse projeto, criei um CRUD de empresas e sócios, no qual, ao criar a empresa, pode-se vincular sócios a essa devida empresa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="formulario" id="formulario">
             <div class="interface">
                 <h2 class="titulo">FALA <span>COMIGO.</span></h2>
                 <span id="saidaEnvio" class="escondido"></span>
-                <form action="./php/envioEmail.php" id="formulario-contato">
+                <form action="./php/__act__envioEmail.php" id="formulario-contato" method="post">
                     <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
                     <input type="text" name="email" id="email" placeholder="Seu email" required>
                     <input type="text" name="celular" id="celular" placeholder="Seu Whatsapp">
@@ -189,6 +233,34 @@
                 </form>
             </div>
         </section>
+
+        <section class="redes_sociais" id="redes_sociais">
+            <div class="interface">
+                <h2 class="titulo">REDES <span>SOCIAIS.</span></h2>
+                <div class="btn-social">
+                    <a href="https://www.instagram.com/estevaotl/" target="_blank">
+                        <button>
+                            <i class="bi bi-instagram"></i>
+                        </button>
+                    </a>
+                    <a href="https://github.com/estevaotl" target="_blank">
+                        <button>
+                            <i class="bi bi-github"></i>
+                        </button>
+                    </a>
+                    <a href="https://www.linkedin.com/in/estevao-leite/" target="_blank">
+                        <button>
+                            <i class="bi bi-linkedin"></i>
+                        </button>
+                    </a>
+                    <a href="https://wa.me/5522997249606?text=Olá%20gostaria%20de%20mais%20informações%20sobre%20o%20seu%20serviço." target="_blank">
+                        <button>
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- <footer>
@@ -196,7 +268,7 @@
             <div class="line-footer">
                 <div class="flex">
                     <div class="logo-footer">
-                        <img src="./images/logo.png" alt="">
+                        <i>Entre em contato</i>
                     </div>
 
                     <div class="btn-social">
@@ -227,4 +299,27 @@
         </div>
     </footer> -->
 </body>
+
+<!-- Botão flutuante para retornar ao topo -->
+<button id="btn-topo" class="btn-topo" title="Voltar ao topo">
+    <img src="./images/icone-seta-cima.png" alt="Voltar ao topo" />
+</button>
+
+<script>
+    // Quando o usuário rolar para baixo 100px, mostre o botão
+    window.onscroll = function() {
+        const btnTopo = document.getElementById("btn-topo");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            btnTopo.style.display = "block";
+        } else {
+            btnTopo.style.display = "none";
+        }
+    };
+
+    // Quando o botão for clicado, role para o topo da página
+    document.getElementById("btn-topo").onclick = function() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    };
+</script>
+
 </html>
