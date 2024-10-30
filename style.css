@@ -322,11 +322,12 @@ section.portfolio .flex {
     bottom: 10px;
     left: 10px;
     color: #fff;
-    font-size: 20px;
+    font-size: x-large;
     font-weight: bold;
     z-index: 10; /* Fixa o título acima da overlay */
     transition: opacity 0.5s; /* Transição suave para a opacidade */
     inset-area: center;
+    text-align-last: center;
 }
 
 .overlay {
@@ -358,6 +359,7 @@ section.portfolio .flex {
 .overlay p {
     margin: 25px 25px 0 25px; /* Espaçamento entre os parágrafos */
     text-align: justify; /* Opcional: centraliza o texto */
+    font-size: medium;
 }
 
 #saidaEnvio{
@@ -570,7 +572,14 @@ footer .line-footer p a {
     }
 
     .project-title {
-        opacity: 0; /* Oculta o título em mobile */
+        bottom: 0;
+        position: relative; /* Título fixo no topo do card */
+        position-area: top;
+        top: 10px;
+    }
+
+    .overlay p {
+        font-size: medium;
     }
 }
 
